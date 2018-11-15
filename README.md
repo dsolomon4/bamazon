@@ -6,10 +6,13 @@ In this activity I had to create an Amazon-like storefront with the MySQL. The a
 
 Javascript, Node, MySQL
 
-# screenshots of App
+# Creenshots of App
 
+*Placing Order
 ![Placing Order](/assets/bamazon_order.png)
 
+* Updating Database
 ![Updating Database](/assets/updated_stock.png)
 
+* Placing Order, Low Quantity
 ![Placing Order, Low Quantity](/assets/bamazon_no_order.png)
