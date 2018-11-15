@@ -70,26 +70,28 @@ function startPrompt() {
                     
                     var totalPrice = answer.quantity * response[chosenItem].price;
                     console.log("The total price for " + response[chosenItem].product_name + " is $" +totalPrice)
+
+                    // Update quantity on database
+                    var query2 = connection.query(
+                        "UPDATE products SET ? WHERE ?",
+                        [
+                          {
+                            stock_quantity: updateQuanity 
+                          },
+                          {
+                            product_name: response[chosenItem].product_name
+                          }
+                        ],
+                        function(err, res) {
+                          console.log("Your order has been placed!\n");
+                        }
+                    )
                     
                 }else{
                     console.log("We do not have enough " + response[chosenItem].product_name +" to fill your order." )
                 }
 
-                // Update quantity on database
-                var query2 = connection.query(
-                    "UPDATE products SET ? WHERE ?",
-                    [
-                      {
-                        stock_quantity: updateQuanity 
-                      },
-                      {
-                        product_name: response[chosenItem].product_name
-                      }
-                    ],
-                    function(err, res) {
-                      console.log(response[chosenItem].stock_quantity + " products updated!\n");
-                    }
-                )
+    
                 
             });
             
