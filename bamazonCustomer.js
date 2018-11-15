@@ -99,7 +99,3 @@ function startPrompt() {
 
 }
 
-function updateData(){
-    console.log("\n");
-   
-}
