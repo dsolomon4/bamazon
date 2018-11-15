@@ -8,8 +8,8 @@ Javascript, Node, MySQL
 
 # screenshots of App
 
-![Placing Order](\assets\bamazon_order.png)
+![Placing Order](/assets/bamazon_order.png)
 
-![Updating Database](\assets\updated_stock.png)
+![Updating Database](/assets/updated_stock.png)
 
-![Placing Order, Low Quantity](\assets\bamazon_no_order.png)
+![Placing Order, Low Quantity](/assets/bamazon_no_order.png)
